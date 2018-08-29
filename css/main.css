@@ -1,5 +1,5 @@
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .bg {
@@ -13,7 +13,6 @@ body {
     background-color: #f0f0f0;
     display: inline-block;
 }
-
 
 header {
     display: inline-block;
@@ -39,7 +38,8 @@ header {
 
 .somos {
     font-weight: 300;
-    font-size: 18px;
+    font-size: 20px;
+    margin-right: 5%;
 }
 
 a {
@@ -48,13 +48,13 @@ a {
 }
 
 .menu {
-    width: 250px;
+    width: 260px;
     display: flex;
     flex-direction: column;
     padding: 0;
     position: fixed;
     font-size: 14px;
-    margin-top: 100px;
+    margin-top: 12%;
 }
 
 nav.menu li {
@@ -66,6 +66,12 @@ nav.menu li {
 
 .drop-menu {
     line-height: 45px;
+}
+
+.drop-menu:hover {
+    font-style: italic;
+    color: gray;
+    margin-left: 10px;
 }
 
 .datos {
@@ -89,30 +95,31 @@ nav.datos span{
 }
 
 #down {
-    font-size: 84px;
+    font-size: 70px;
+    padding-right: 500px;
 }
 
 .scroll {
-    font-size: 22px;
+    font-size: 20px;
     margin: -11px 0 0 0;
     display: flex;
 }
 
 .scroll-action {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 .main {
     width: 50%;
     margin-left: 50%;
-    margin-right: 20px;
-    margin-top: 150px;
+    margin-top: 15%;
+    margin-bottom: -150px;
 }
 
 .bg-layer{
     width: 100%;
-    min-height: 600px;
+    min-height: 4000px;
     background-color: #f0f0f0;
 }
 
@@ -123,3 +130,215 @@ nav.datos span{
 #header.fixed .datos span{
     display: none;
 }
+
+.seccion{
+    margin-right: 5%;
+    text-align: left;
+    margin-left: 46%;
+}
+
+.titulo{
+    font-size: 80px;
+    margin-top: -80px;
+    padding-top: 80px;
+    letter-spacing: 27px;
+    margin-bottom: -1px;
+}
+
+.titulo-largo{
+    font-size: 80px;
+    margin-top: -80px;
+    padding-top: 80px;
+    letter-spacing: 27px;
+    margin-bottom: -1px;
+}
+
+.subtitulo{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides2 {
+    display: none;
+}
+
+.mySlides3 {
+    display: none;
+}
+
+.mySlides4 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fotoboda {
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.cascade-slider_container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  .cascade-slider_item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) scale(0.3);
+    transition: all 1s ease;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .cascade-slider_item.next {
+    left: 50%;
+    transform: translateY(-50%) translateX(-150%) scale(0.6);
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .cascade-slider_item.prev {
+    left: 50%;
+    transform: translateY(-50%) translateX(50%) scale(0.6);
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .cascade-slider_item.now {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) scale(1);
+    opacity: 1;
+    z-index: 5;
+  }
+
+  .cascade-slider_arrow {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 5;
+  }
+  
+  .cascade-slider_arrow-left { left: 0; }
+  
+  .cascade-slider_arrow-right { right: 0; }
+  
+  .cascade-slider_nav {
+    position: absolute;
+    bottom: -120px;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+  }
+  
+  .cascade-slider_dot {
+    display: inline-block;
+    width: .6em;
+    height: .6em;
+    margin: .6em;
+    background: #ddd;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .cascade-slider_dot:hover { background: #555; }
+  
+  .cascade-slider_dot.cur { background: #555; }
